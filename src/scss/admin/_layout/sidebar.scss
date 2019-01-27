@@ -1,2 +1,5 @@
-@import "../../../../node_modules/@coreui/coreui/scss/coreui";
-@import '../../../../node_modules/@coreui/coreui/scss/dropdown-menu-right';
+
+@import '~@coreui/coreui/scss/_dropdown-menu-right.scss';
+@import "~@coreui/coreui/scss/coreui";
+@import '~@coreui/icons/css/coreui-icons.css';
+@import "~font-awesome/css/font-awesome.css";
