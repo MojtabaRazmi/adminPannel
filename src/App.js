@@ -4,7 +4,7 @@ import './App.scss';
 import './App.css';
 
 // Containers
-import Main from './../src/components/main';
+import Main from './components/basic/main';
 // Pages
 
 // import { renderRoutes } from 'react-router-config';

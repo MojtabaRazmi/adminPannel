@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Test2 = () => {
+const Charts = () => {
   return (
     <div>
-      Test2
+      Charts
     </div>
   )
 }
 
-export default Test2
+export default Charts

@@ -3,7 +3,7 @@ export default {
     {
       name: 'ONLINE NARMAK',
       url: '/dashboard',
-      icon: 'fda fa-opencart',
+      icon: 'fa fa-opencart',
       // badge: {
       //   variant: 'info',
       //   text: 'NEW',
@@ -19,17 +19,17 @@ export default {
     },
     {
       name: 'users',
-      url: '/base',
+      url: '/users',
       icon: 'fa fa-users',
       children: [
         {
           name: 'admins',
-          url: '/base/breadcrumbs',
+          url: '/users/admins',
           icon: 'fa fa-user-circle',
         },
         {
           name: 'customers',
-          url: '/base/cards',
+          url: '/users/customers',
           icon: 'fa fa-user',
         }]
     },
@@ -44,17 +44,17 @@ export default {
     },
     {
       name: 'products',
-      url: '/theme/colors',
+      url: '/products',
       icon: 'fa fa-shopping-basket',
       children: [
         {
           name: 'proteins market',
-          url: '/base/breadcrumbs',
+          url: '/products/proteins-market',
           icon: 'fa fa-shopping-bag',
         },
         {
           name: 'super market',
-          url: '/base/cards',
+          url: '/products/super-market',
           icon: 'fa fa-shopping-cart',
         }]
     },
@@ -69,8 +69,12 @@ export default {
     },
     {
       name: 'orders',
-      url: '/base',
-      icon: 'fa fa-tasks'
+      url: '/orders',
+      icon: 'fa fa-tasks',
+      badge:{
+        variant:'info',
+        text:5
+      }
     },
     {
       title: true,
@@ -82,22 +86,22 @@ export default {
     },
     {
       name: 'cost & benefit',
-      url: '/base',
+      url: '/costs',
       icon: 'fa fa-bank',
       children: [
         {
           name: 'incomes',
-          url: '/base/breadcrumbs',
+          url: '/costs/incomes',
           icon: 'fa fa-money',
         },
         {
           name: 'loses',
-          url: '/base/cards',
+          url: '/costs/loses',
           icon: 'fa fa-ban',
         },
         {
           name: 'charts',
-          url: '/base/cards',
+          url: '/costs/charts',
           icon: 'fa fa-line-chart',
         }
       ]
@@ -111,7 +115,7 @@ export default {
     // },
     {
       name: 'Telegram Channel',
-      url: 'https://coreui.io/react/',
+      url: 'https://t.me/MYMusicMOJI1373',
       icon: 'fa fa-telegram',
       class: 'mt-auto',
       variant: 'primary',
@@ -120,9 +124,9 @@ export default {
 
     {
       name: 'Instagram Page',
-      url: 'https://coreui.io/pro/react/',
+      url: 'https://www.instagram.com/?hl=en',
       icon: 'fa fa-instagram',
-      variant: 'info',
+      variant: 'danger',
       attributes: { target: '_blank', rel: 'noopener' },
     },
   ],

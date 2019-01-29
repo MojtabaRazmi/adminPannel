@@ -7,13 +7,43 @@ function Loading() {
   return <div>Loading...</div>;
 }
 
-const Test = Loadable({
-  loader: () => import('./../components/test'),
+const Admins = Loadable({
+  loader: () => import('../components/sidebar/Admins'),
   loading: Loading,
 });
 
-const Test2 = Loadable({
-  loader: () => import('./../components/test2'),
+const Customers = Loadable({
+  loader: () => import('../components/sidebar/Customers'),
+  loading: Loading,
+});
+
+const ProteinMarket = Loadable({
+  loader: () => import('../components/sidebar/ProteinMarket'),
+  loading: Loading,
+});
+
+const SuperMarket = Loadable({
+  loader: () => import('../components/sidebar/SuperMarket'),
+  loading: Loading,
+});
+
+const Orders = Loadable({
+  loader: () => import('../components/sidebar/Ordedrs'),
+  loading: Loading,
+});
+
+const Incomes = Loadable({
+  loader: () => import('../components/sidebar/Incomes'),
+  loading: Loading,
+});
+
+const Loses = Loadable({
+  loader: () => import('../components/sidebar/Loses'),
+  loading: Loading,
+});
+
+const Charts = Loadable({
+  loader: () => import('../components/sidebar/Charts'),
   loading: Loading,
 });
 
@@ -22,8 +52,17 @@ const Test2 = Loadable({
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home', component: App },
-  { path: '/base', exact: true, name: 'Base', component: Test },
-  { path: '/base/cards', name: 'Cards', component: Test2 },
+  { path: '/users', exact: true, name: 'Users' },
+  { path: '/users/customers', name: 'Customers', component: Customers },
+  { path: '/users/admins', name: 'Admins', component: Admins },
+  { path: '/products', name: 'Products'},
+  { path: '/products/proteins-market', name: 'Proteins-Market', component: ProteinMarket },
+  { path: '/products/super-market', name: 'Super-Market', component: SuperMarket },
+  { path: '/orders', name: 'orders', component: Orders },
+  { path: '/costs', exact: true, name: 'Costs' },
+  { path: '/costs/incomes', name: 'Incomes', component: Incomes },
+  { path: '/costs/loses', name: 'Loses', component: Loses },
+  { path: '/costs/charts', name: 'Charts', component: Charts },
 
 ];
 

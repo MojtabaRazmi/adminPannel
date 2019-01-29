@@ -3,9 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import { Container } from 'reactstrap';
 
 import {
-  AppAside,
   AppBreadcrumb,
-  AppFooter,
   AppHeader,
   AppSidebar,
   AppSidebarFooter,
@@ -14,16 +12,17 @@ import {
   AppSidebarMinimizer,
   AppSidebarNav,
 } from '@coreui/react'
-import navigation from './../utils/_nav'
-import routes from './../utils/routes'
+import navigation from '../../utils/_nav'
+import routes from '../../utils/routes'
+import Header from './Header'
 
 class Main extends Component {
   render() {
     return (
-      <div>
+
         <div className="app">
           <AppHeader fixed>
-            {/*<DefaultHeader />*/}
+            <Header />
           </AppHeader>
           <div className="app-body">
             <AppSidebar fixed display="lg">
@@ -48,15 +47,8 @@ class Main extends Component {
                 </Switch>
               </Container>
             </main>
-            <AppAside fixed>
-              {/*<DefaultAside />*/}
-            </AppAside>
           </div>
-          <AppFooter>
-            {/*<DefaultFooter />*/}
-          </AppFooter>
         </div>
-      </div>
     );
   }
 }
