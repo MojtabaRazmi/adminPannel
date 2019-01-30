@@ -5,7 +5,6 @@ import {
   DropdownMenu,
   DropdownToggle,
   Nav,
-  NavItem,
   NavLink
 } from 'reactstrap'
 import PropTypes from 'prop-types'
@@ -34,23 +33,19 @@ class Header extends Component {
         />
         <AppSidebarToggler className="d-md-down-none" display="lg"/>
         <Nav className="ml-auto" navbar>
-          {/*<NavItem className="d-md-down-none">*/}
-            {/*<NavLink href="#"><i className="fa fa-bell-o"/>*/}
-              {/*<Badge pill color="danger">5</Badge>*/}
-            {/*</NavLink>*/}
-          {/*</NavItem>*/}
+
           <AppHeaderDropdown direction="left" className='mr-2'>
             <DropdownToggle nav>
-              <NavItem className="d-md-down-none">
-              <NavLink href="#/orders">
-                <i className="fa fa-bell-o"/>
-                <Badge pill color='danger'>5</Badge>
-              </NavLink>
-              </NavItem>
+              <i className="fa fa-bell-o"/>
+              <Badge pill color='danger'>5</Badge>
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
               <DropdownItem header tag="div" className="text-center"><strong>Orders</strong></DropdownItem>
-              <DropdownItem><i className="fa fa-tasks"/>New Orders<Badge color="info">42</Badge></DropdownItem>
+                <NavLink href='#/orders'>
+                  <DropdownItem>
+                    <i className="fa fa-tasks"/>New Orders<Badge id='myID' color="info">42</Badge>
+                  </DropdownItem>
+                </NavLink>
             </DropdownMenu>
           </AppHeaderDropdown>
           <AppHeaderDropdown direction="down" className='mr-2'>
@@ -60,7 +55,7 @@ class Header extends Component {
             <DropdownMenu right style={{ right: 'auto' }}>
               <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
               <DropdownItem><i className="fa fa-user"/>Profile</DropdownItem>
-              <DropdownItem ><i className="fa fa-sign-out"/> Logout</DropdownItem>
+              <DropdownItem><i className="fa fa-sign-out"/> Logout</DropdownItem>
             </DropdownMenu>
           </AppHeaderDropdown>
         </Nav>
