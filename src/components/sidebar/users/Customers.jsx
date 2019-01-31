@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 
-import customersData from './../../utils/fakes/customersData'
+import customersDatas from '../../../utils/fakes/customersData'
 
 function UserRow(props) {
   const customer = props.customer
-  const userLink = `#/users/${customer.id}`
+  const customerLink = `#/users/customers/${customer.id}`
 
   const getBadge = (status) => {
     return status === 'Active' ? 'success' :
@@ -17,11 +17,11 @@ function UserRow(props) {
 
   return (
     <tr key={customer.id.toString()}>
-      <th scope="row"><a href={userLink}>{customer.id}</a></th>
-      <td><a href={userLink}>{customer.name}</a></td>
+      <th scope="row"><a href={customerLink}>{customer.id}</a></th>
+      <td><a href={customerLink}>{customer.name}</a></td>
       <td>{customer.registered}</td>
       <td>{customer.role}</td>
-      <td><Badge href={userLink} color={getBadge(customer.status)}>{customer.status}</Badge></td>
+      <td><Badge href={customerLink} color={getBadge(customer.status)}>{customer.status}</Badge></td>
     </tr>
   )
 }
@@ -45,15 +45,15 @@ class Customers extends Component {
                   <thead>
                   <tr>
                     <th scope="col">id</th>
-                    <th scope="col">name</th>
+                    <th scope="col">Customer name</th>
                     <th scope="col">registered</th>
                     <th scope="col">role</th>
                     <th scope="col">status</th>
                   </tr>
                   </thead>
                   <tbody>
-                  {customersData.map((customer, index) =>
-                    <UserRow key={index} customer={customer}/>
+                  {customersDatas.map((customerData, index) =>
+                    <UserRow key={index} customer={customerData}/>
                   )}
                   </tbody>
                 </Table>

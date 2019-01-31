@@ -8,12 +8,17 @@ function Loading() {
 }
 
 const Admins = Loadable({
-  loader: () => import('../components/sidebar/Admins'),
+  loader: () => import('../components/sidebar/users/Admins'),
   loading: Loading,
 });
 
 const Customers = Loadable({
-  loader: () => import('../components/sidebar/Customers'),
+  loader: () => import('../components/sidebar/users/Customers'),
+  loading: Loading,
+});
+
+const Customer = Loadable({
+  loader: () => import('../components/sidebar/users/Customer'),
   loading: Loading,
 });
 
@@ -49,13 +54,15 @@ const Charts = Loadable({
 
 
 
+
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home', component: App },
   { path: '/users', exact: true, name: 'Users' },
-  { path: '/users/customers', name: 'Customers', component: Customers },
+  { path: '/users/customers',exact:true, name: 'Customers', component: Customers },
+  { path: '/users/customers/:id',exact:true, name: 'Customer-Details', component: Customer },
   { path: '/users/admins', name: 'Admins', component: Admins },
-  { path: '/products', name: 'Products'},
+  { path: '/products',exact:true, name: 'Products'},
   { path: '/products/proteins-market', name: 'Proteins-Market', component: ProteinMarket },
   { path: '/products/super-market', name: 'Super-Market', component: SuperMarket },
   { path: '/orders', name: 'orders', component: Orders },
