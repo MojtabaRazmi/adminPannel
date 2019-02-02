@@ -3,6 +3,7 @@ import Loadable from 'react-loadable'
 
 import App from './../App';
 
+
 function Loading() {
   return <div>Loading...</div>;
 }
@@ -23,12 +24,12 @@ const Customer = Loadable({
 });
 
 const ProteinMarket = Loadable({
-  loader: () => import('../components/sidebar/ProteinMarket'),
+  loader: () => import('../components/sidebar/products/ProteinMarket'),
   loading: Loading,
 });
 
 const SuperMarket = Loadable({
-  loader: () => import('../components/sidebar/SuperMarket'),
+  loader: () => import('../components/sidebar/products/SuperMarket'),
   loading: Loading,
 });
 
@@ -52,6 +53,11 @@ const Charts = Loadable({
   loading: Loading,
 });
 
+const Admin = Loadable({
+  loader: () => import('../components/sidebar/users/Admin'),
+  loading: Loading,
+});
+
 
 
 
@@ -62,6 +68,7 @@ const routes = [
   { path: '/users/customers',exact:true, name: 'Customers', component: Customers },
   { path: '/users/customers/:id',exact:true, name: 'Customer-Details', component: Customer },
   { path: '/users/admins', name: 'Admins', component: Admins },
+  { path: '/users/admins/admin', name: 'Admins', component: Admin },
   { path: '/products',exact:true, name: 'Products'},
   { path: '/products/proteins-market', name: 'Proteins-Market', component: ProteinMarket },
   { path: '/products/super-market', name: 'Super-Market', component: SuperMarket },

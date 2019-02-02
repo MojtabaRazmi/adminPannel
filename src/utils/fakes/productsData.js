@@ -1,0 +1,31 @@
+const productsData = [
+  {id: 0, productName: 'John Doe', productSupply: 'Guest', productPrice: '10000',productImage:'some image will been shown here'},
+  {id: 1, productName: 'Samppa Nori', productSupply: 'Member', productPrice: '10000',productImage:'some image will been shown here'},
+  {id: 2, productName: 'Estavan Lykos', productSupply: 'Staff', productPrice: 'Banned',productImage:'some image will been shown here'},
+  {id: 3, productName: 'Chetan Mohamed', productSupply: 'Admin', productPrice: 'Inactive',productImage:'some image will been shown here'},
+  {id: 4, productName: 'Derick Maximinus', productSupply: 'Member', productPrice: 'Pending',productImage:'some image will been shown here'},
+  {id: 5, productName: 'Friderik Dávid', productSupply: 'Staff', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 6, productName: 'Yiorgos Avraamu', productSupply: 'Member', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 7, productName: 'Avram Tarasios', productSupply: 'Staff', productPrice: 'Banned',productImage:'some image will been shown here'},
+  {id: 8, productName: 'Quintin Ed', productSupply: 'Admin', productPrice: 'Inactive',productImage:'some image will been shown here'},
+  {id: 9, productName: 'Enéas Kwadwo', productSupply: 'Member', productPrice: 'Pending',productImage:'some image will been shown here'},
+  {id: 10, productName: 'Agapetus Tadeáš', productSupply: 'Staff', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 11, productName: 'Carwyn Fachtna', productSupply: 'Member', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 12, productName: 'Nehemiah Tatius', productSupply: 'Staff', productPrice: 'Banned',productImage:'some image will been shown here'},
+  {id: 13, productName: 'Ebbe Gemariah', productSupply: 'Admin', productPrice: 'Inactive',productImage:'some image will been shown here'},
+  {id: 14, productName: 'Eustorgios Amulius', productSupply: 'Member', productPrice: 'Pending',productImage:'some image will been shown here'},
+  {id: 15, productName: 'Leopold Gáspár', productSupply: 'Staff', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 16, productName: 'Pompeius René', productSupply: 'Member', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 17, productName: 'Paĉjo Jadon', productSupply: 'Staff', productPrice: 'Banned',productImage:'some image will been shown here'},
+  {id: 18, productName: 'Micheal Mercurius', productSupply: 'Admin', productPrice: 'Inactive',productImage:'some image will been shown here'},
+  {id: 19, productName: 'Ganesha Dubhghall', productSupply: 'Member', productPrice: 'Pending',productImage:'some image will been shown here'},
+  {id: 20, productName: 'Hiroto Šimun', productSupply: 'Staff', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 21, productName: 'Vishnu Serghei', productSupply: 'Member', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 22, productName: 'Zbyněk Phoibos', productSupply: 'Staff', productPrice: 'Banned',productImage:'some image will been shown here'},
+  {id: 23, productName: 'Einar Randall', productSupply: 'Admin', productPrice: 'Inactive',productImage:'some image will been shown here'},
+  {id: 24, productName: 'Félix Troels', productSupply: 'Staff', productPrice: 'Active',productImage:'some image will been shown here'},
+  {id: 25, productName: 'Aulus Agmundr', productSupply: 'Member', productPrice: 'Pending',productImage:'some image will been shown here'},
+  {id: 42, productName: 'Ford Prefex', productSupply: 'Alien', productPrice: 'Don\'t panic!',productImage:'some image will been shown here'}
+]
+
+export default productsData
