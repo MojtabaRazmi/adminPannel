@@ -58,7 +58,15 @@ const Admin = Loadable({
   loading: Loading,
 });
 
+const pmProduct = Loadable({
+  loader: () => import('../components/sidebar/products/pmProduct'),
+  loading: Loading,
+});
 
+const smProduct = Loadable({
+  loader: () => import('../components/sidebar/products/smProduct'),
+  loading: Loading,
+});
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -70,8 +78,10 @@ const routes = [
   { path: '/users/admins', name: 'Admins', component: Admins },
   { path: '/users/admins/admin', name: 'Admins', component: Admin },
   { path: '/products',exact:true, name: 'Products'},
-  { path: '/products/proteins-market', name: 'Proteins-Market', component: ProteinMarket },
+  { path: '/products/proteins-market',exact:true, name: 'Proteins-Market', component: ProteinMarket },
+  { path: '/products/proteins-market/:id', name: 'P-M product', component: pmProduct },
   { path: '/products/super-market', name: 'Super-Market', component: SuperMarket },
+  { path: '/products/super-market/:id', name: 'S-M product', component: smProduct },
   { path: '/orders', name: 'orders', component: Orders },
   { path: '/costs', exact: true, name: 'Costs' },
   { path: '/costs/incomes', name: 'Incomes', component: Incomes },

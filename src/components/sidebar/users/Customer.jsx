@@ -17,10 +17,10 @@ class Customer extends Component {
     return (
       <div className="animated fadeIn">
         <Row>
-          <Col lg={6}>
+          <Col lg={12}>
             <Card>
               <CardHeader>
-                <strong><i className="icon-info pr-1"/>Customer id: {this.props.match.params.id}</strong>
+                <strong><i className="fa fa-drivers-license-o pr-1"/> Customer id: {this.props.match.params.id}</strong>
               </CardHeader>
               <CardBody>
                 <Table responsive striped hover>
