@@ -38,7 +38,9 @@ class Customers extends Component {
           <Col xl={12}>
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"/> Customers <small className="text-muted">example</small>
+                <i className="fa fa-align-justify"/>
+                Customers
+                <small className="text-muted">example</small>
               </CardHeader>
               <CardBody>
                 <Table responsive hover>

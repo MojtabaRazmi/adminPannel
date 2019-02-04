@@ -40,7 +40,9 @@ class Header extends Component {
               <Badge pill color='danger'>5</Badge>
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
-              <DropdownItem header tag="div" className="text-center"><strong>Orders</strong></DropdownItem>
+              <DropdownItem header tag="div" className="text-center">
+                <strong>Orders</strong>
+              </DropdownItem>
                 <NavLink href='#/orders'>
                   <DropdownItem>
                     <i className="fa fa-tasks"/>New Orders<Badge id='myID' color="info">42</Badge>
@@ -53,7 +55,9 @@ class Header extends Component {
               <img src={profile} className="img-avatar" alt="admin@bootstrapmaster.com"/>
             </DropdownToggle>
             <DropdownMenu right style={{ right: 'auto' }}>
-              <DropdownItem header tag="div" className="text-center"><strong>Account</strong></DropdownItem>
+              <DropdownItem header tag="div" className="text-center">
+                <strong>Account</strong>
+              </DropdownItem>
               <DropdownItem><i className="fa fa-user"/>Profile</DropdownItem>
               <DropdownItem><i className="fa fa-sign-out"/> Logout</DropdownItem>
             </DropdownMenu>

@@ -11,13 +11,13 @@ class PmProduct extends Component {
         'border-primary'
   }
 
-  textDecoration=(supply)=>{
+  textDecoration = (supply) => {
     return supply <= 5 ? 'text-danger' :
       5 < supply && supply <= 10 ? 'text-warning' :
         'text-primary'
   }
 
-  supplyInfo=(supply)=>{
+  supplyInfo = (supply) => {
     return supply <= 5 ? `the Supply of this product is ${supply} and get ran out of. please charge it!` :
       5 < supply && supply <= 10 ? `the Supply is ${supply}.gonna to charge it!` :
         `don't worry about it`
@@ -34,21 +34,25 @@ class PmProduct extends Component {
           <Col lg={12}>
             <Card className={this.cardBorder(product.productSupply)}>
               <CardHeader>
-                <strong><i className="fa fa-info pr-1"/> Customer id : {this.props.match.params.id}</strong>
+                <strong>
+                  <i className="fa fa-info pr-1"/> product id : {this.props.match.params.id}
+                </strong>
               </CardHeader>
               <CardBody>
                 <Table responsive striped hover>
                   <tbody>
                   <tr>
-                    <td>supply information : </td>
-                    <td className={this.textDecoration(product.productSupply)}><strong>{this.supplyInfo(product.productSupply)} </strong></td>
+                    <td>supply information :</td>
+                    <td className={this.textDecoration(product.productSupply)}>
+                      <strong>{this.supplyInfo(product.productSupply)} </strong>
+                    </td>
                   </tr>
                   <tr>
                     <td>product ID:</td>
                     <td><strong>{product.id}</strong></td>
                   </tr>
                   <tr>
-                    <td>product name : </td>
+                    <td>product name :</td>
                     <td><strong>{product.productName}</strong></td>
                   </tr>
                   <tr>
@@ -56,7 +60,7 @@ class PmProduct extends Component {
                     <td><strong>{product.productPrice}</strong></td>
                   </tr>
                   <tr>
-                    <td className='h-50 w-50'>product image : </td>
+                    <td className='h-50 w-50'>product image :</td>
                     <td><strong>{product.productImage}</strong></td>
                   </tr>
                   </tbody>
