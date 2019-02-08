@@ -5,7 +5,7 @@ import customersDatas from '../../../utils/fakes/customersData'
 
 function UserRow(props) {
   const customer = props.customer
-  const customerLink = `#/users/customers/${customer.id}`
+  const customerLink = `/users/customers/${customer.id}`
 
   const getBadge = (status) => {
     return status === 'Active' ? 'success' :

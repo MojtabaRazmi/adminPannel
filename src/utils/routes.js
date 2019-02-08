@@ -34,22 +34,22 @@ const SuperMarket = Loadable({
 });
 
 const Orders = Loadable({
-  loader: () => import('../components/sidebar/Ordedrs'),
+  loader: () => import('../components/sidebar/Orders'),
   loading: Loading,
 });
 
 const Incomes = Loadable({
-  loader: () => import('../components/sidebar/Incomes'),
+  loader: () => import('../components/sidebar/costs/Incomes'),
   loading: Loading,
 });
 
 const Loses = Loadable({
-  loader: () => import('../components/sidebar/Loses'),
+  loader: () => import('../components/sidebar/costs/Loses'),
   loading: Loading,
 });
 
 const Charts = Loadable({
-  loader: () => import('../components/sidebar/Charts'),
+  loader: () => import('../components/sidebar/costs/Charts'),
   loading: Loading,
 });
 
@@ -65,6 +65,16 @@ const pmProduct = Loadable({
 
 const smProduct = Loadable({
   loader: () => import('../components/sidebar/products/smProduct'),
+  loading: Loading,
+});
+
+const comments = Loadable({
+  loader: () => import('../components/sidebar/comments'),
+  loading: Loading,
+});
+
+const comment = Loadable({
+  loader: () => import('../components/sidebar/comment'),
   loading: Loading,
 });
 
@@ -87,7 +97,8 @@ const routes = [
   { path: '/costs/incomes', name: 'Incomes', component: Incomes },
   { path: '/costs/loses', name: 'Loses', component: Loses },
   { path: '/costs/charts', name: 'Charts', component: Charts },
-
+  { path: '/comments',exact:true, name: 'Comments', component: comments },
+  { path: '/comments/comment/:id', name: 'Comment', component: comment },
 ];
 
 export default routes;

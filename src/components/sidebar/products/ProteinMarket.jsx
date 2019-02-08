@@ -34,7 +34,7 @@ class ProteinMarket extends Component {
               <Card key={productData.id} className={this.cardBorder(productData.productSupply)}>
                 <CardHeader> {productData.productName} </CardHeader>
                 <CardBody>
-                  <a href={`#/products/proteins-market/${productData.id}`}>
+                  <a href={`/products/proteins-market/${productData.id}`}>
                   {productData.productImage}
                   </a>
                 </CardBody>

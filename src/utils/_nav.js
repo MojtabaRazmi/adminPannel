@@ -107,6 +107,27 @@ export default {
       ]
 
     },
+    {
+      title: true,
+      name: 'costs & benefits',
+      wrapper: {
+        element: '',
+        attributes: {},
+      },
+    },
+    {
+      name: 'comments and reply',
+      url: '/comments',
+      icon: 'fa fa-comments',
+      children: [
+        {
+          name: 'comments',
+          url: '/comments',
+          icon: 'fa fa-comments-o',
+        },
+      ]
+
+    },
     // {
     //   name: 'Disabled',
     //   url: '/dashboard',

@@ -1,0 +1,31 @@
+const customersData = [
+  {id: 0, userName: 'John Doe', date: '2018/01/01', comment: 'Guest', reply: ''},
+  {id: 1, userName: 'Samppa Nori', date: '2018/01/01', comment: 'Member', reply: ''},
+  {id: 2, userName: 'Estavan Lykos', date: '2018/02/01', comment: 'Staff', reply: 'Banned'},
+  {id: 3, userName: 'Chetan Mohamed', date: '2018/02/01', comment: 'Admin', reply: 'Inactive'},
+  {id: 4, userName: 'Derick Maximinus', date: '2018/03/01', comment: 'Member', reply: 'Pending'},
+  {id: 5, userName: 'Friderik Dávid', date: '2018/01/21', comment: 'Staff', reply: 'Active'},
+  {id: 6, userName: 'Yiorgos Avraamu', date: '2018/01/01', comment: 'Member', reply: 'Active'},
+  {id: 7, userName: 'Avram Tarasios', date: '2018/02/01', comment: 'Staff', reply: 'Banned'},
+  {id: 8, userName: 'Quintin Ed', date: '2018/02/01', comment: 'Admin', reply: 'Inactive'},
+  {id: 9, userName: 'Enéas Kwadwo', date: '2018/03/01', comment: 'Member', reply: 'Pending'},
+  {id: 10, userName: 'Agapetus Tadeáš', date: '2018/01/21', comment: 'Staff', reply: ''},
+  {id: 11, userName: 'Carwyn Fachtna', date: '2018/01/01', comment: 'Member', reply: 'Active'},
+  {id: 12, userName: 'Nehemiah Tatius', date: '2018/02/01', comment: 'Staff', reply: 'Banned'},
+  {id: 13, userName: 'Ebbe Gemariah', date: '2018/02/01', comment: 'Admin', reply: ''},
+  {id: 14, userName: 'Eustorgios Amulius', date: '2018/03/01', comment: 'Member', reply: 'Pending'},
+  {id: 15, userName: 'Leopold Gáspár', date: '2018/01/21', comment: 'Staff', reply: 'Active'},
+  {id: 16, userName: 'Pompeius René', date: '2018/01/01', comment: 'Member', reply: 'Active'},
+  {id: 17, userName: 'Paĉjo Jadon', date: '2018/02/01', comment: 'Staff', reply: 'Banned'},
+  {id: 18, userName: 'Micheal Mercurius', date: '2018/02/01', comment: 'Admin', reply: 'Inactive'},
+  {id: 19, userName: 'Ganesha Dubhghall', date: '2018/03/01', comment: 'Member', reply: 'Pending'},
+  {id: 20, userName: 'Hiroto Šimun', date: '2018/01/21', comment: 'Staff', reply: 'Active'},
+  {id: 21, userName: 'Vishnu Serghei', date: '2018/01/01', comment: 'Member', reply: 'Active'},
+  {id: 22, userName: 'Zbyněk Phoibos', date: '2018/02/01', comment: 'Staff', reply: 'Banned'},
+  {id: 23, userName: 'Einar Randall', date: '2018/02/01', comment: 'Admin', reply: 'Inactive'},
+  {id: 24, userName: 'Félix Troels', date: '2018/03/21', comment: 'Staff', reply: 'Active'},
+  {id: 25, userName: 'Aulus Agmundr', date: '2018/01/01', comment: 'Member', reply: 'Pending'},
+  {id: 42, userName: 'Ford Prefex', date: '2001/05/21', comment: 'Alien', reply: 'Don\'t panic!'}
+]
+
+export default customersData

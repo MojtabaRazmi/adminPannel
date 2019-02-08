@@ -17,6 +17,14 @@ import routes from '../../utils/routes'
 import Header from './Header'
 
 class Main extends Component {
+
+  componentDidMount () {
+    if(localStorage.getItem('token')===null){
+      console.log('inja')
+      this.props.history.push('/login')
+    }
+  }
+
   render() {
     return (
 

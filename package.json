@@ -6,9 +6,11 @@
     "@coreui/coreui": "github:coreui/coreui",
     "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.2.0",
     "@coreui/react": "^2.1.3",
+    "axios": "^0.18.0",
     "chart.js": "^2.7.3",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
+    "formik": "^1.4.3",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
@@ -18,7 +20,8 @@
     "react-router-config": "^4.4.0-beta.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.3",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "yup": "^0.26.10"
   },
   "scripts": {
     "start": "react-scripts start",

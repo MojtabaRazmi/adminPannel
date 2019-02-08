@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.scss';
 import './App.css';
 
@@ -12,11 +12,9 @@ import Main from './components/basic/main';
 class App extends Component {
   render() {
     return (
-      <HashRouter>
-        <Switch>
-          <Route path="/" name="Home" component={Main} />
-        </Switch>
-      </HashRouter>
+      <Switch>
+        <Route path="/" name="Home" component={Main} />
+      </Switch>
     );
   }
 }
