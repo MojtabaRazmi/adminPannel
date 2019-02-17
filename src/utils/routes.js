@@ -69,12 +69,12 @@ const smProduct = Loadable({
 });
 
 const comments = Loadable({
-  loader: () => import('../components/sidebar/comments'),
+  loader: () => import('../components/sidebar/comments/comments'),
   loading: Loading,
 });
 
 const comment = Loadable({
-  loader: () => import('../components/sidebar/comment'),
+  loader: () => import('../components/sidebar/comments/comment'),
   loading: Loading,
 });
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap'
 
-import commentDatas from './../../utils/fakes/commentsData'
+import commentDatas from '../../../utils/fakes/commentsData'
 
 function CommentRow (props) {
   const comment = props.comment
