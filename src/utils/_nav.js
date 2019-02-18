@@ -48,6 +48,16 @@ export default {
       icon: 'fa fa-shopping-basket',
       children: [
         {
+          name: 'ADD product',
+          url: '/products/add-product',
+          icon: 'fa fa-plus',
+        },
+        {
+          name: 'EDIT product',
+          url: '/products/edit-product',
+          icon: 'fa fa-minus',
+        },
+        {
           name: 'proteins market',
           url: '/products/proteins-market',
           icon: 'fa fa-shopping-bag',

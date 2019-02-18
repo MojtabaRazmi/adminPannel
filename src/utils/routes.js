@@ -88,6 +88,8 @@ const routes = [
   { path: '/users/admins', name: 'Admins', component: Admins },
   { path: '/users/admins/admin', name: 'Admins', component: Admin },
   { path: '/products',exact:true, name: 'Products'},
+  { path: '/products/add-product', name: 'ADD product', component:'' },
+  { path: '/products/edit-product', name: 'EDIT product', component:'' },
   { path: '/products/proteins-market',exact:true, name: 'Proteins-Market', component: ProteinMarket },
   { path: '/products/proteins-market/:id', name: 'P-M product', component: pmProduct },
   { path: '/products/super-market', name: 'Super-Market', component: SuperMarket },

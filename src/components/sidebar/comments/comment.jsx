@@ -77,8 +77,11 @@ class Customer extends Component {
                         {comment.reply === ''
                           ? <Button onClick={this.toggle}><i className='fa fa-pencil'/> Tap To Reply</Button>
                           : (
-                            <span>{comment.reply}</span>
+                            <span>{comment.reply}
+                                &emsp;
+                              <Button onClick={this.toggle}><i className='fa fa-pencil'/> Tap To Edit Reply</Button>
 
+                            </span>
                           )
                         }
 
