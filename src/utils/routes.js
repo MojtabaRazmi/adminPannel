@@ -78,6 +78,11 @@ const comment = Loadable({
   loading: Loading,
 });
 
+const addProduct = Loadable({
+  loader: () => import('../components/sidebar/products/addProduct'),
+  loading: Loading,
+});
+
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -88,7 +93,7 @@ const routes = [
   { path: '/users/admins', name: 'Admins', component: Admins },
   { path: '/users/admins/admin', name: 'Admins', component: Admin },
   { path: '/products',exact:true, name: 'Products'},
-  { path: '/products/add-product', name: 'ADD product', component:'' },
+  { path: '/products/add-product', name: 'ADD product', component:addProduct },
   { path: '/products/edit-product', name: 'EDIT product', component:'' },
   { path: '/products/proteins-market',exact:true, name: 'Proteins-Market', component: ProteinMarket },
   { path: '/products/proteins-market/:id', name: 'P-M product', component: pmProduct },
