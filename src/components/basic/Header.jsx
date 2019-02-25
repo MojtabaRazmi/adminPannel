@@ -43,7 +43,7 @@ class Header extends Component {
               <DropdownItem header tag="div" className="text-center">
                 <strong>Orders</strong>
               </DropdownItem>
-                <NavLink href='#/orders'>
+                <NavLink href='/orders'>
                   <DropdownItem>
                     <i className="fa fa-tasks"/>New Orders<Badge id='myID' color="info">42</Badge>
                   </DropdownItem>
@@ -58,7 +58,9 @@ class Header extends Component {
               <DropdownItem header tag="div" className="text-center">
                 <strong>Account</strong>
               </DropdownItem>
-              <DropdownItem><i className="fa fa-user"/>Profile</DropdownItem>
+              <NavLink href='users/admins/:id'>
+                <DropdownItem><i className="fa fa-user"/>Profile</DropdownItem>
+              </NavLink>
               <DropdownItem><i className="fa fa-sign-out"/> Logout</DropdownItem>
             </DropdownMenu>
           </AppHeaderDropdown>
